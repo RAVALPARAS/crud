@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>view post</title>
+</head>
+<style>
+    body{
+        background-color: lightgray;
+    }
+
+</style>
+<body>
+    <center>
+        <h1>Welcome to Blog Post</h1>
+        <h5>Please refer below posts</h5>
+        <h1><a href="/"><i>Home</i></a></h1>
+        <h1><a href="/AuthorRegister"><i>Author Register</i></a></h1>
+        <h1><a href="/UserRegister"><i>User Register</i></a></h1>
+
+            <table border="5px">
+                <thead>
+                    {% for i in elist %}
+                    <tr>
+                        <td>Name</td>
+                        <td>{{i[0]}}</td>
+                    </tr>
+                    <tr>
+                        <td>Title</td>
+                        <td>{{i[1]}}</td>
+                    </tr>
+                    <tr>
+                        <td>Post</td>
+                        <td>{{i[2]}}</td>
+                    </tr>
+                    {% endfor %}
+                    
+                </thead>
+               
+            </table>
+       
+        
+    </center>
+    
+</body>
+</html>

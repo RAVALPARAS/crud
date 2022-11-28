@@ -15,7 +15,7 @@ def addUser(t):
     db=getConnection()
     sql='insert into user values(%s,%s,%s,%s)'
     cr=db.cursor()
-    cr.execute(sql,t)
+    cr.execute(sql,t)git log
     db.commit()
     db.close()
 
